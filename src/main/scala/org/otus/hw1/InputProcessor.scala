@@ -1,4 +1,4 @@
-package org.otus
+package org.otus.hw1
 
 import scala.annotation.tailrec
 import scala.io.StdIn.readLine

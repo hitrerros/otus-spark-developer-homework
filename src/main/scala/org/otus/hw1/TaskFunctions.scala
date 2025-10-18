@@ -1,6 +1,6 @@
-package org.otus
+package org.otus.hw1
 
-import org.otus.InputProcessor._
+import InputProcessor._
 
 trait TaskFunctions {
   val functorHello: String => String = (x: String) => s"Hello, ${x}"

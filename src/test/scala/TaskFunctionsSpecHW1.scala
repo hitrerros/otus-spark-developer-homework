@@ -1,8 +1,8 @@
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
-class TaskFunctionsSpec extends AnyFunSuite with Matchers {
-  import org.otus.TaskFunctions._
+class TaskFunctionsSpecHW1 extends AnyFunSuite with Matchers {
+  import org.otus.hw1.TaskFunctions._
 
   test("functorHello shows greeting for a person") {
     functorHello.apply("Ivan") shouldBe "Hello, Ivan"
