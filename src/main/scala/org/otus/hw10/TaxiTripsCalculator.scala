@@ -10,7 +10,6 @@ object TaxiTripsCalculator extends App {
     .appName("WordCount")
     .master("local[*]") // local mode with all cores
     .getOrCreate()
-  val sparkContext = spark.sparkContext
 
   val roundTimeStamp: (Row, String) => LocalDateTime =
     (row: Row, name: String) => {
