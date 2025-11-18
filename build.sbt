@@ -7,4 +7,8 @@ lazy val root = (project in file("."))
     name := "spark-developer-hw"
   )
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % Test
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % "4.0.0" ,
+  "org.apache.spark" %% "spark-sql"  % "4.0.0",
+  "org.scalatest" %% "scalatest" % "3.2.19" % Test
+)
