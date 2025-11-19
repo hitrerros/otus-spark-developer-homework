@@ -1,15 +1,13 @@
 package org.otus.hw10
 
+import org.apache.spark.sql.Row
+import org.otus.SparkAppRunner
+
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
-import org.apache.spark.sql.{Row, SparkSession}
 
-object TaxiTripsCalculator extends App {
-  val spark = SparkSession.builder
-    .appName("WordCount")
-    .master("local[*]") // local mode with all cores
-    .getOrCreate()
+object TaxiTripsCalculator  extends SparkAppRunner {
 
   val roundTimeStamp: (Row, String) => LocalDateTime =
     (row: Row, name: String) => {
